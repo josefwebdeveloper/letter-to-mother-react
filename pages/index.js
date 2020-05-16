@@ -1,65 +1,32 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+import Layout from '../components/Layout';
+import Message from '../components/message';
+import React from 'react';
+import Form from '../components/form';
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+const Home = (props) => {
+    return (
+        <Layout>
+            <div id='header' className='full-rotate '>
+                <h1>This website will self destruct
+                    <span>
+                        {/*<Timer ref={childRef} startCounter={startCounter.timer}/>*/}
+                    </span></h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+                <Message article={props.article}/>
+                <div id='header' className='full-rotate'>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                    <Form />
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                </div>
 
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
+            </div>
+            <style jsx>{`
+h1 {
+  font-family: Patrick Hand SC, sans-serif;
+  font-weight: 400;
+}
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -68,142 +35,63 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
       `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+            <style jsx global>{`
+          body {
+    background-color: #d2bf9e;
+    font-family: Architects Daughter, cursive;
 }
+.full-rotate {
+  margin: auto;
+  width: 80vw;
+  max-width: 40em;
+  transform: rotate(-3deg);
+}
+.note{
+    background-color: #e6ddd0;
+    padding: 1em;
+    margin-bottom: 1rem;
+}
+
+
+.btn {
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    transition: all 235ms ease 0s;
+    box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, .2);
+    transition: all 235ms ease-in-out 0s;
+    align-self: center;
+    background: 0 0;
+    border: 2px solid #41403e;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    outline: 0;
+    padding: .75rem;
+}
+.btn:hover {
+    transform: translate3d(0,2px,0);
+    box-shadow: 2px 8px 8px -5px rgba(0,0,0,.3);
+}
+.btn:active {
+    border-color: rgba(0,0,0,.2);
+    transition: none;
+}
+
+        `}
+            </style>
+        </Layout>
+    );
+};
+Home.getInitialProps = async () => {
+    const res = await fetch('https://letter-to-mother.herokuapp.com/article/random');
+    const data = await res.json();
+    // console.log(data.data.article[0].article, 'article');
+    return {
+        article: data.data.article[0].article
+    };
+};
+export default Home;
