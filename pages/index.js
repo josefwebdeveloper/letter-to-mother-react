@@ -161,8 +161,11 @@ h1 {
 //.main-carousel{
 //margin: 0 auto;
 //width: 300px;
-//height: 300px;
+//max-height: 320px;
 //}
+.swiper-container-cube{
+overflow: hidden;
+}
  .swiper-container {
       margin: 20px 0;
       width: 100%;
@@ -191,14 +194,14 @@ h1 {
       -webkit-align-items: center;
       align-items: center;
     }
-        //.container {
-        //  min-height: 100vh;
-        //  padding: 0 0.5rem;
-        //  display: flex;
-        //  flex-direction: column;
-        //  justify-content: center;
-        //  align-items: center;
-        //}
+        .container {
+          min-height: 100vh;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       `}</style>
             <style jsx global>{`
           body {
@@ -218,9 +221,7 @@ h1 {
     padding: 1em;
     margin-bottom: 1rem;
 }
-.container-carusel{
-height: 250px;
-}
+
 .active{
 display: flex;
 align-items: center;
