@@ -45,10 +45,10 @@ const Home = (props) => {
                 delay: 5000,
             },
             cubeEffect: {
-                shadow: true,
+                // shadow: true,
                 slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
+                // shadowOffset: 20,
+                // shadowScale: 0.94,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
