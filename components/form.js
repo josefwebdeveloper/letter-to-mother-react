@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 
 const Form = (props) => {
     const [inputs, setInputs] = useState({
-        article: 'Dear WebSite,'
+        article: 'Дорогая Наташа,'
     });
     const [submitted, setSubmitted] = useState(false);
     const {article} = inputs;
@@ -51,22 +51,32 @@ const Form = (props) => {
 
     return (
         <div id='form'>
-            <div className=" ">
-                {/*<h1>Form</h1>*/}
-                <form id='article-text' name="form" onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <textarea className='note' id='article-text' name="article" value={article}
+            {/*<h1>Form</h1>*/}
+            <form id='article-text' name="form" onSubmit={handleSubmit}>
+                <div className="form-group  border-1 child-borders note ">
+                        <textarea className='note form-textarea main-text' id='article-text' name="article" value={article}
                                   onChange={handleChange}
                         />
-                    </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary">
-                            Send
-                        </button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div className="form-group">
+                    <button className="btn btn-primary main-text">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+            <style jsx>{`
+#form{
+margin: 10px;
+}
+.form-textarea{
+width: 100%;
+height: 150px;
+}
+
+ `}
+            </style>
         </div>
+
     );
 };
 

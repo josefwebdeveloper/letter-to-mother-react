@@ -7,21 +7,7 @@ import Form from '../components/form';
 import Timer from '../components/timer';
 import img from '../components/data';
 import * as Swiper from '../public/js/swiper';
-// <script>
-//     var swiper = new Swiper('.swiper-container', {
-//     effect: 'cube',
-//     grabCursor: true,
-//     cubeEffect: {
-//     shadow: true,
-//     slideShadows: true,
-//     shadowOffset: 20,
-//     shadowScale: 0.94,
-// },
-//     pagination: {
-//     el: '.swiper-pagination',
-// },
-// });
-// </script>
+import Footer from '../components/footer';
 
 const Home = (props) => {
     let imgUrlDb = img;
@@ -45,18 +31,15 @@ const Home = (props) => {
                 delay: 5000,
             },
             cubeEffect: {
-                // shadow: true,
+                shadow: true,
                 slideShadows: true,
-                // shadowOffset: 20,
-                // shadowScale: 0.94,
+                shadowOffset: 20,
+                shadowScale: 0.94,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
+            }
         });
     }, []);
     const nextArticle = async () => {
@@ -66,106 +49,48 @@ const Home = (props) => {
     };
     return (
         <Layout>
-            {/*<div style={{backgroundImage:`url('/images/3.jpeg')`,width:100,height:100}}></div>*/}
-            <div className="main-carousel">
+            <div className="main-carousel full-rotate ">
+                <h2 className='main-text  main-text-private'>Пишите...помните...
+                    <span>
+                        <Timer startCounter={timer}/>
+                    </span></h2>
+
                 <div className="swiper-container">
-                    <div className="swiper-wrapper">
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/3.jpeg')`}}></div>
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/1.jpeg')`}}></div>
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/2.jpeg')`}}></div>
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/4.jpeg')`}}></div>
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/5.jpeg')`}}></div>
-                        <div className="swiper-slide"
-                             style={{backgroundImage: `url('/images/6.jpeg')`}}></div>
-                        {/*<div className="swiper-slide"*/}
-                        {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
-                        {/*<div className="swiper-slide"*/}
-                        {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-4.jpg)"></div>*/}
-                        {/*<div className="swiper-slide"*/}
-                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)"></div>*/}
-                        {/*<div className="swiper-slide"*/}
-                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
-                        {/*<div className="swiper-slide"*/}
-                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
+                    <div className="swiper-wrapper">{
+                        imgUrlData.map((data) => (
+                            <div key={data.id} className="swiper-slide"
+                                 style={{backgroundImage: `url(${data.imageUrl})`}}></div>
+                        ))}
                     </div>
                     <div className="swiper-pagination"></div>
                     <div className="swiper-button-prev"></div>
                     <div className="swiper-button-next"></div>
                 </div>
             </div>
-            {/*<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>*/}
-
-            {/*<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"*/}
-            {/*        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"*/}
-            {/*        crossOrigin="anonymous"></script>*/}
-            {/*<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"*/}
-            {/*        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"*/}
-            {/*        crossOrigin="anonymous"></script>*/}
-            {/*<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"*/}
-            {/*        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"*/}
-            {/*        crossOrigin="anonymous"></script>*/}
-            {/*<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">*/}
-            {/*    <div className="carousel-inner container-carusel">{*/}
-            {/*        imgUrlData.map((data) => (*/}
-            {/*                 <div key={data.id} className={` carousel-item ${data.active}`}>*/}
-            {/*                    <img  src={data.imageUrl} className=" responsive d-block w-100" alt={data.imageUrl}/>*/}
-            {/*                </div>*/}
-
-            {/*        ))*/}
-            {/*    }*/}
-            {/*<div className="carousel-item active">*/}
-            {/*    <img src="/images/1.jpeg" className="d-block w-100" alt="..."/>*/}
-            {/*</div>*/}
-            {/*<div className="carousel-item">*/}
-            {/*    <img src="/images/2.jpeg" className="d-block w-100" alt="..."/>*/}
-            {/*</div>*/}
-            {/*<div className="carousel-item">*/}
-            {/*    <img src="/images/3.jpeg" className="d-block w-100" alt="..."/>*/}
-            {/*</div>*/}
-            {/*    </div>*/}
-            {/*    <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">*/}
-            {/*        <span className="carousel-control-prev-icon" aria-hidden="true"></span>*/}
-            {/*        <span className="sr-only">Previous</span>*/}
-            {/*    </a>*/}
-            {/*    <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">*/}
-            {/*        <span className="carousel-control-next-icon" aria-hidden="true"></span>*/}
-            {/*        <span className="sr-only">Next</span>*/}
-            {/*    </a>*/}
-            {/*</div>*/}
-            {/*<button type="button" className="btn btn-light">Primary</button>*/}
             <div id='header' className='full-rotate '>
-                <h1>Time from last Letter
-                    <span>
-                        <Timer startCounter={timer}/>
-                    </span></h1>
 
                 <Message article={article} handleNext={nextArticle}/>
-                <div id='header' className='full-rotate'>
-
-                    <Form/>
-
-                </div>
-
             </div>
+            <div id='header' className='full-rotate '>
+                <Form/>
+            </div>
+            <div id='header' className='full-rotate '>
+                <Footer/>
+            </div>
+
             <style jsx>{`
 
 h1 {
   font-family: Patrick Hand SC, sans-serif;
   font-weight: 400;
 }
-//.main-carousel{
-//margin: 0 auto;
-//width: 300px;
-//max-height: 320px;
-//}
 .swiper-container-cube{
 overflow: hidden;
 }
+.main-text-private{
+margin: 15px;
+}
+
  .swiper-container {
       margin: 20px 0;
       width: 100%;
@@ -209,6 +134,16 @@ overflow: hidden;
     font-family: Architects Daughter, cursive;
      position: relative;
       height: 100%;
+}
+.border-main{
+border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    box-shadow: 15px 28px 25px -18px rgba(0,0,0,.2);
+}
+.main-text{
+font-family: 'Balsamiq Sans', cursive;
 }
 .full-rotate {
   margin: auto;
@@ -258,6 +193,26 @@ height: 250px;
 .btn:active {
     border-color: rgba(0,0,0,.2);
     transition: none;
+}
+.border, .border-1, .child-borders > :nth-child(6n+1) {
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+.border, .border-1, .child-borders > :nth-child(6n+1) {
+  border-bottom-left-radius: 15px 255px;
+}
+
+.border {
+  border: 2px solid #41403e;
+}
+.main-text-footer{
+font-size: 13px;
+}
+.center{
+margin: 0 auto;
+text-align: center;
 }
 
         `}

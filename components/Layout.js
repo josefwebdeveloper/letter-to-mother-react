@@ -8,7 +8,7 @@ const Layout = (props) => (
             content="letter to mother"
         />
       {/*<link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css"/>*/}
-
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"/>
         {/*<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>*/}
     </Head>

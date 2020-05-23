@@ -1,38 +1,34 @@
 const img = [
     {
-        active:'active',
-        imageUrl: '/images/5.png',
+        imageUrl: '/images/1.jpeg',
         id: 1
     },
     {
-        // imageUrl: '/images/2.png',
-        imageUrl: 'https://res.cloudinary.com/dpjvzwvec/image/upload/v1590175828/mother/6_nn7m0w.jpg',
+        imageUrl: '/images/2.jpeg',
         id: 2
     },
     {
-        // imageUrl: '/images/3.png',
-        imageUrl: 'https://res.cloudinary.com/dpjvzwvec/image/upload/v1590175827/mother/5_myyaqn.jpg',
+        imageUrl: '/images/3.jpeg',
         id: 3,
     },
     {
-        // imageUrl: '/images/4.png',
-        imageUrl: 'https://res.cloudinary.com/dpjvzwvec/image/upload/c_fit,h_250/v1590175827/mother/5_myyaqn.jpg',
+        imageUrl: '/images/4.jpeg',
         id: 4
     },
     {
-        imageUrl: '/images/5.png',
+        imageUrl: '/images/5.jpeg',
         id: 5
     },
     {
-        imageUrl: '/images/6.png',
+        imageUrl: '/images/6.jpeg',
         id: 6
     },
     {
-        imageUrl: '/images/7.png',
+        imageUrl: '/images/7.jpeg',
         id: 7
     },
     {
-        imageUrl: '/images/8.png',
+        imageUrl: '/images/8.jpeg',
         id: 8
     },
     {
