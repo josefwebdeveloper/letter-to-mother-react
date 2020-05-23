@@ -11,38 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d6c3a4-0e6a-4530-afe4-a9ef9cf52776" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/swiper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/11.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/12.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/13.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/14.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/15.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/16.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/7.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/9.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.esm.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/swiper.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +102,7 @@
       <workItem from="1589625606198" duration="16822000" />
       <workItem from="1589894458779" duration="10497000" />
       <workItem from="1590045195178" duration="173000" />
-      <workItem from="1590160783377" duration="23209000" />
+      <workItem from="1590160783377" duration="24562000" />
     </task>
     <servers />
   </component>
@@ -164,34 +133,34 @@
       <screen x="1680" y="23" width="2516" height="1057" />
     </state>
     <state x="2047" y="478" key="GitCloneDialog/0.23.1680.1027/1680.23.2516.1057@1680.23.2516.1057" timestamp="1589627038714" />
-    <state width="1237" height="290" key="GridCell.Tab.0.bottom" timestamp="1590238173667">
+    <state width="1237" height="290" key="GridCell.Tab.0.bottom" timestamp="1590241076348">
       <screen x="1680" y="23" width="2519" height="1057" />
     </state>
     <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.2515.1057@1680.23.2515.1057" timestamp="1589916392081" />
     <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.2516.1057@1680.23.2516.1057" timestamp="1590172787391" />
     <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.2517.1057@1680.23.2517.1057" timestamp="1589984309619" />
-    <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590238173667" />
-    <state width="1237" height="290" key="GridCell.Tab.0.center" timestamp="1590238173666">
+    <state width="1237" height="290" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590241076348" />
+    <state width="1237" height="290" key="GridCell.Tab.0.center" timestamp="1590241076348">
       <screen x="1680" y="23" width="2519" height="1057" />
     </state>
     <state width="1237" height="290" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.2515.1057@1680.23.2515.1057" timestamp="1589916392080" />
     <state width="1237" height="290" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.2516.1057@1680.23.2516.1057" timestamp="1590172787390" />
     <state width="1237" height="290" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.2517.1057@1680.23.2517.1057" timestamp="1589984309618" />
-    <state width="1237" height="290" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590238173666" />
-    <state width="1237" height="290" key="GridCell.Tab.0.left" timestamp="1590238173665">
+    <state width="1237" height="290" key="GridCell.Tab.0.center/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590241076348" />
+    <state width="1237" height="290" key="GridCell.Tab.0.left" timestamp="1590241076347">
       <screen x="1680" y="23" width="2519" height="1057" />
     </state>
     <state width="1237" height="290" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.2515.1057@1680.23.2515.1057" timestamp="1589916392079" />
     <state width="1237" height="290" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.2516.1057@1680.23.2516.1057" timestamp="1590172787390" />
     <state width="1237" height="290" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.2517.1057@1680.23.2517.1057" timestamp="1589984309617" />
-    <state width="1237" height="290" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590238173665" />
-    <state width="1237" height="290" key="GridCell.Tab.0.right" timestamp="1590238173667">
+    <state width="1237" height="290" key="GridCell.Tab.0.left/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590241076347" />
+    <state width="1237" height="290" key="GridCell.Tab.0.right" timestamp="1590241076348">
       <screen x="1680" y="23" width="2519" height="1057" />
     </state>
     <state width="1237" height="290" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.2515.1057@1680.23.2515.1057" timestamp="1589916392080" />
     <state width="1237" height="290" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.2516.1057@1680.23.2516.1057" timestamp="1590172787391" />
     <state width="1237" height="290" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.2517.1057@1680.23.2517.1057" timestamp="1589984309618" />
-    <state width="1237" height="290" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590238173667" />
+    <state width="1237" height="290" key="GridCell.Tab.0.right/0.23.1680.1027/1680.23.2519.1057@1680.23.2519.1057" timestamp="1590241076348" />
     <state x="1818" y="190" key="SettingsEditor" timestamp="1590165584770">
       <screen x="1680" y="23" width="2516" height="1057" />
     </state>

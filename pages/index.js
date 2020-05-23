@@ -142,6 +142,7 @@ h1 {
   font-weight: 400;
 }
  .swiper-container {
+      margin: 20px 0;
       width: 100%;
       height: 100%;
     }
