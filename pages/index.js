@@ -39,11 +39,20 @@ const Home = (props) => {
         const swiper = new Swiper('.swiper-container', {
             effect: 'cube',
             grabCursor: true,
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 5000,
+            },
             cubeEffect: {
                 shadow: true,
                 slideShadows: true,
                 shadowOffset: 20,
                 shadowScale: 0.94,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -58,28 +67,36 @@ const Home = (props) => {
     return (
         <Layout>
             {/*<div style={{backgroundImage:`url('/images/3.jpeg')`,width:100,height:100}}></div>*/}
-            <div className="swiper-container">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide"
-                         style={{backgroundImage: `url('/images/3.jpeg')`}}></div>
-                    <div className="swiper-slide"
-                         style={{backgroundImage: `url('/images/1.jpeg')`}}></div>
-                    <div className="swiper-slide"
-                         style={{backgroundImage: `url('/images/2.jpeg')`}}></div>
-                    <div className="swiper-slide"
-                         style={{backgroundImage: `url('/images/4.jpeg')`}}></div>
-                    {/*<div className="swiper-slide"*/}
-                    {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
-                    {/*<div className="swiper-slide"*/}
-                    {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-4.jpg)"></div>*/}
-                    {/*<div className="swiper-slide"*/}
-                    {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)"></div>*/}
-                    {/*<div className="swiper-slide"*/}
-                    {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
-                    {/*<div className="swiper-slide"*/}
-                    {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
+            <div className="main-carousel">
+                <div className="swiper-container">
+                    <div className="swiper-wrapper">
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/3.jpeg')`}}></div>
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/1.jpeg')`}}></div>
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/2.jpeg')`}}></div>
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/4.jpeg')`}}></div>
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/5.jpeg')`}}></div>
+                        <div className="swiper-slide"
+                             style={{backgroundImage: `url('/images/6.jpeg')`}}></div>
+                        {/*<div className="swiper-slide"*/}
+                        {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
+                        {/*<div className="swiper-slide"*/}
+                        {/*     style="backgroundImage:url(https://swiperjs.com/demos/images/nature-4.jpg)"></div>*/}
+                        {/*<div className="swiper-slide"*/}
+                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-5.jpg)"></div>*/}
+                        {/*<div className="swiper-slide"*/}
+                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
+                        {/*<div className="swiper-slide"*/}
+                        {/*     style="background-image:url(https://swiperjs.com/demos/images/nature-3.jpg)"></div>*/}
+                    </div>
+                    <div className="swiper-pagination"></div>
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
                 </div>
-                <div className="swiper-pagination"></div>
             </div>
             {/*<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>*/}
 
@@ -141,6 +158,11 @@ h1 {
   font-family: Patrick Hand SC, sans-serif;
   font-weight: 400;
 }
+//.main-carousel{
+//margin: 0 auto;
+//width: 300px;
+//height: 300px;
+//}
  .swiper-container {
       margin: 20px 0;
       width: 100%;
@@ -150,7 +172,7 @@ h1 {
       text-align: center;
       font-size: 18px;
       // background-color: #fff;
-      width: 100%;
+      width: 300px;
       height: 300px;
       background-position: center center;
       background-repeat: no-repeat;
