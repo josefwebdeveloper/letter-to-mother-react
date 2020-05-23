@@ -26,14 +26,14 @@ const Form = (props) => {
         e.preventDefault();
 
         setSubmitted(true);
-        if (article && article !== 'Dear WebSite,') {
+        if (article && article !== 'Дорогая Наташа,') {
 
             // console.log({article:article,type:'crazy'});
             // dispatch(formActions.postArticle({article: article, type: 'crazy'}));
             // props.handleTimer();
             // console.log(e.target);
             postArticle({article: article}).then(r => console.log(r));
-            setInputs({article: 'Dear WebSite,'});
+            setInputs({article: 'Дорогая Наташа,'});
 
         }
     }

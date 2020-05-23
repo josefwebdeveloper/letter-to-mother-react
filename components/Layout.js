@@ -12,7 +12,7 @@ const Layout = (props) => (
       <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"/>
         {/*<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>*/}
     </Head>
-    <div className="container">
+    <div className="container-main">
       {props.children}
     </div>
   </div>

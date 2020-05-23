@@ -11,11 +11,9 @@ const Message = (props) => {
 
     useEffect(() => {
         setArticle(props.article);
-        console.log(useEffect);
 
     }, [props.article]);
     const nextHandle = (e) => {
-        console.log(e);
         props.handleNext();
 
     };

@@ -8,6 +8,7 @@ import Timer from '../components/timer';
 import img from '../components/data';
 import * as Swiper from '../public/js/swiper';
 import Footer from '../components/footer';
+import ReactPlayer from 'react-player';
 
 const Home = (props) => {
     let imgUrlDb = img;
@@ -19,9 +20,7 @@ const Home = (props) => {
     // const ms = moment(now,).diff(moment(startTime,));
     const childRef = useRef();
     useEffect(() => {
-        // dispatch(articleActions.random());
-        // voicesDropdown = document.querySelector('[name="voice"]');
-        // setArticle(props.article);
+
         const swiper = new Swiper('.swiper-container', {
             effect: 'cube',
             grabCursor: true,
@@ -74,7 +73,10 @@ const Home = (props) => {
             <div id='header' className='full-rotate '>
                 <Form/>
             </div>
-            <div id='header' className='full-rotate '>
+            <div id='header' className='full-rotate  '>
+                <ReactPlayer  width="100%"
+                    url="https://www.youtube.com/watch?v=Q0JlDZoNezw&t=991s"
+                />
                 <Footer/>
             </div>
 
@@ -87,10 +89,13 @@ h1 {
 .swiper-container-cube{
 overflow: hidden;
 }
+
 .main-text-private{
 margin: 15px;
 }
-
+.special ReactPlayer{
+width: 100% !important;
+}
  .swiper-container {
       margin: 20px 0;
       width: 100%;
@@ -119,14 +124,7 @@ margin: 15px;
       -webkit-align-items: center;
       align-items: center;
     }
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+       
       `}</style>
             <style jsx global>{`
           body {
@@ -135,6 +133,15 @@ margin: 15px;
      position: relative;
       height: 100%;
 }
+ .container-main {
+          min-height: 100vh;
+          width: 100vw;
+          padding: 0 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 .border-main{
 border-bottom-left-radius: 15px 255px;
     border-bottom-right-radius: 225px 15px;
