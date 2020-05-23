@@ -7,7 +7,6 @@ import Home from '../pages';
 // import {timerService} from '../../_services/timer.service';
 
 const Message = (props) => {
-    // console.log(props);
     // const msg = new SpeechSynthesisUtterance();
     // const voices = speechSynthesis.getVoices();
     const [show, setShow] = useState(false);
@@ -19,23 +18,22 @@ const Message = (props) => {
     // let voicesDropdown;
 
     useEffect(() => {
-        // dispatch(articleActions.random());
-        // voicesDropdown = document.querySelector('[name="voice"]');
         setArticle(props.article);
+        console.log(useEffect);
 
-    }, []);
+    }, [props.article]);
     const nextHandle = (e) => {
         console.log(e);
-        nextArticle().then(r => setArticle(r.article));
+        props.handleNext();
 
     };
-    const nextArticle = async () => {
-        const res = await fetch('https://letter-to-mother.herokuapp.com/article/random');
-        const data = await res.json();
-        return {
-            article: data.data.article[0].article
-        };
-    };
+    // const nextArticle = async () => {
+    //     const res = await fetch('https://letter-to-mother.herokuapp.com/article/random');
+    //     const data = await res.json();
+    //     return {
+    //         article: data.data.article[0].article
+    //     };
+    // };
 
     const soundHandle = () => {
         showSound = !showSound;
@@ -110,7 +108,7 @@ const Message = (props) => {
 
     );
 };
-Message.getInitialProps = async () => {
-
-};
+// Message.getInitialProps = async () => {
+//
+// };
 export default Message;
