@@ -236,7 +236,7 @@ Home.getInitialProps = async () => {
     console.log(timer.data.timer[0].startTime, 'dataTimer');
 
 
-    return {article: article.data.article[0].article, timer: timer.data.timer[0].startTime};
+    return {article: article.data.article[0], timer: timer.data.timer[0].startTime};
 
 };
 export default Home;

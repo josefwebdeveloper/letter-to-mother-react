@@ -1,8 +1,10 @@
 import Head from 'next/head';
+import React from 'react';
 const Layout = (props) => (
   <div>
     <Head>
-      <title>To Mother</title>
+
+      <title>Mother</title>
         <meta
             name="description"
             content="letter to mother"
@@ -13,6 +15,7 @@ const Layout = (props) => (
       <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet"/>
         {/*<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>*/}
     </Head>
+
     <div className="container-main">
       {props.children}
     </div>

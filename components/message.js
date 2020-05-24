@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import moment from 'moment';
 
 
 const Message = (props) => {
-
+    console.log(props);
     const [show, setShow] = useState(false);
     const [article, setArticle] = useState('');
 
@@ -29,7 +30,8 @@ const Message = (props) => {
             <div className="border border-1 child-borders note  ">
                 <div id='tttt' className="">
                     <div id='tsx' className='note main-text'>
-                        {article}
+                        <div>{moment(article.createdDate).format('DD-MM-YYYY')}</div>
+                        {article.article}
                     </div>
                 </div>
 
