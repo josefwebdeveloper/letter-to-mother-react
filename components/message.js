@@ -19,18 +19,17 @@ const Message = (props) => {
 
     };
 
-
-    const soundHandle = () => {
-        showSound = !showSound;
-
+    const handleOldData = (data) => {
+        return (data === '23-05-2020') ? '11-05-2020' : data;
     };
+
     return (
         <div id='message' className=' '>
 
             <div className="border border-1 child-borders note  ">
                 <div id='tttt' className="">
                     <div id='tsx' className='note main-text'>
-                        <div>{moment(article.createdDate).format('DD-MM-YYYY')}</div>
+                        <div>{handleOldData(moment(article.createdDate).format('DD-MM-YYYY'))}</div>
                         {article.article}
                     </div>
                 </div>

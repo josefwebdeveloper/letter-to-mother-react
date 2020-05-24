@@ -50,9 +50,14 @@ const Home = (props) => {
         <Layout>
             <div className="main-carousel full-rotate ">
                 <h2 className='main-text  main-text-private'>Пишите...помните...
-                    <span>
-                        <Timer startCounter={timer}/>
-                    </span></h2>
+                   </h2>
+                <h3 className={`main-text main-text-private`}>
+                    <Timer startCounter={timer}/>
+                </h3>
+                <div className={`main-text main-text-private-second`}>
+                    <span>прошло с последнего письма</span>
+                </div>
+
 
                 <div className="swiper-container">
                     <div className="swiper-wrapper">{
@@ -61,7 +66,7 @@ const Home = (props) => {
                                  style={{backgroundImage: `url(${data.imageUrl})`}}></div>
                         ))}
                     </div>
-                    <div className="swiper-pagination"></div>
+                    {/*<div className="swiper-pagination"></div>*/}
                     <div className="swiper-button-prev"></div>
                     <div className="swiper-button-next"></div>
                 </div>
@@ -95,6 +100,9 @@ margin: 15px;
 }
 .special ReactPlayer{
 width: 100% !important;
+}
+.main-text-private-second{
+margin: 0 15px;
 }
  .swiper-container {
       margin: 20px 0;
