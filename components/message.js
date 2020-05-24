@@ -5,7 +5,7 @@ import moment from 'moment';
 const Message = (props) => {
     console.log(props);
     const [show, setShow] = useState(false);
-    const [article, setArticle] = useState('');
+    const [article, setArticle] = useState(props.article);
 
     let showSound = false;
 
@@ -15,7 +15,8 @@ const Message = (props) => {
 
     }, [props.article]);
     const nextHandle = (e) => {
-        props.handleNext();
+        console.log(article._id);
+        props.handleNext(article._id);
 
     };
 
@@ -29,8 +30,8 @@ const Message = (props) => {
             <div className="border border-1 child-borders note  ">
                 <div id='tttt' className="">
                     <div id='tsx' className='note main-text'>
-                        <div>{handleOldData(moment(article.createdDate).format('DD-MM-YYYY'))}</div>
-                        {article.article}
+                        <div>{article && handleOldData(moment(article.createdDate).format('DD-MM-YYYY'))}</div>
+                        {article && article.article}
                     </div>
                 </div>
 

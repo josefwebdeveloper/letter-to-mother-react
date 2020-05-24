@@ -41,8 +41,8 @@ const Home = (props) => {
             }
         });
     }, []);
-    const nextArticle = async () => {
-        const res = await fetch('https://letter-to-mother.herokuapp.com/article/random');
+    const nextArticle = async (id) => {
+        const res = await fetch(`https://letter-to-mother.herokuapp.com/article/getNext/${id}`);
         const data = await res.json();
         setArticle(data.data.article[0]);
     };
