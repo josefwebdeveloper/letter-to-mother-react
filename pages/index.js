@@ -44,7 +44,7 @@ const Home = (props) => {
     const nextArticle = async () => {
         const res = await fetch('https://letter-to-mother.herokuapp.com/article/random');
         const data = await res.json();
-        setArticle(data.data.article[0].article);
+        setArticle(data.data.article[0]);
     };
     return (
         <Layout>
