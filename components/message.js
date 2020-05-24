@@ -36,7 +36,7 @@ const Message = (props) => {
 
             </div>
             <button className="btn btn-primary" onClick={nextHandle}>
-                ⟹
+                <span className='main-text'>Следующее</span>
             </button>
             <style jsx>{`
 .border, .border-1, .child-borders > :nth-child(6n+1) {
