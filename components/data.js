@@ -62,6 +62,62 @@ const img = [
     {
         imageUrl: '/images/16.jpeg',
         id: 16
-    }
+    },
+    {
+        imageUrl: '/images/17.jpeg',
+        id: 17
+    },
+    {
+        imageUrl: '/images/18.jpeg',
+        id: 18
+    },
+    {
+        imageUrl: '/images/19.jpeg',
+        id: 19,
+    },
+    {
+        imageUrl: '/images/20.jpg',
+        id: 20
+    },
+    {
+        imageUrl: '/images/21.jpg',
+        id: 21
+    },
+    {
+        imageUrl: '/images/22.jpg',
+        id: 22
+    },
+    {
+        imageUrl: '/images/23.jpg',
+        id: 23
+    },
+    {
+        imageUrl: '/images/24.jpg',
+        id: 24
+    },
+    {
+        imageUrl: '/images/25.jpg',
+        id: 25
+    },
+    {
+        imageUrl: '/images/26.jpg',
+        id: 26
+    },
+    {
+        imageUrl: '/images/27.jpg',
+        id: 27
+    },
+    {
+        imageUrl: '/images/28.jpg',
+        id: 28
+    },
+    {
+        imageUrl: '/images/29.jpg',
+        id: 29
+    },
+    {
+        imageUrl: '/images/20.jpg',
+        id: 30
+    },
 ];
 export default img;
